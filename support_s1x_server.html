@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -84,15 +84,21 @@
                                         Requirements:
                                     </h4>
                                     <ul>
-                                        <li>The <a
-                                                href="https://www.microsoft.com/en-us/download/details.aspx?id=5555">Visual
-                                                C++ 2010 Redistributable Package</a> and the <a
-                                                href="https://aka.ms/vs/16/release/vc_redist.x86.exe">Visual C++
+                                        <li>A computer or VPS with Windows 10/Server 2019 or newer.</li>
+                                        <li>At least 4GB of RAM for a single
+                                            server, with another 2GB per server
+                                            instance you want to host.</li>
+                                        <li>The
+                                            <a href="https://www.microsoft.com/en-us/download/details.aspx?id=5555">Visual
+                                                C++ 2010 Redistributable Package</a> and the
+                                            <a href="https://aka.ms/vs/16/release/vc_redist.x86.exe">Visual C++
                                                 2015-2019 Redistributable Package</a> (These are included in the S1x
-                                            Dedicated Server torrent linked below).</li>
-                                        <li><a href="https://code.visualstudio.com">Visual Code</a>, <a
-                                                href="https://notepad-plus-plus.org">Notepad++</a> or <a
-                                                href="https://www.sublimetext.com">Sublime Text</a> (You may use
+                                            Dedicated Server torrent linked below).
+                                        </li>
+                                        <li>
+                                            <a href="https://code.visualstudio.com">Visual Code</a>,
+                                            <a href="https://notepad-plus-plus.org">Notepad++</a> or
+                                            <a href="https://www.sublimetext.com">Sublime Text</a> (You may use
                                             whatever editor you choose but
                                             we don't recommend Windows Notepad).
                                         </li>
@@ -100,7 +106,9 @@
                                                 href="https://www.qbittorrent.org/download.php">qBittorrent</a> is
                                             recommended).</li>
                                         <li>Computer or VPS that's online 24/7 with a decent connection that has average
-                                            or above specs (We strongly advise a VPS).</li>
+                                            or above specs (We strongly advise a VPS).
+                                            For best results, use a wired connection
+                                            and avoid using a laptop to host servers.</li>
                                         <li>Some technical knowledge / background knowledge of computers.</li>
                                     </ul>
                                     <h4>
@@ -116,15 +124,23 @@
                                         <li>Download the server configurations from <a
                                                 href="https://github.com/ChxseH/S1xServerConfigs/archive/main.zip">GitHub</a>,
                                             and place the files in the server folder.</li>
+                                        <li>Open the redist folder and install
+                                            all of the prerequisites.</li>
                                         <li>Run <code>!updateXLabs.bat</code> to update your server.</li>
-                                        <!-- For now, Chase owns the repo used above, I can continue to host it or can transfer it to Xerxes or something. -->
                                         <li>Carefully review and edit the configuration settings file to your liking.
-                                            Give it a hostname, gametype, and remove/add maps that you want on the
-                                            rotate, etc.</li>
+                                            Give it a hostname, gametype, and remove/add maps that you want
+                                            in the map rotation, etc.</li>
                                         <li>Save the server.cfg file you just edited after you are done.</li>
                                         <li>Forward the TCP and UDP port (27016). If you changed the default port or are
-                                            adding another server, you may need to open the following addition ports:
-                                            27017, 27018, etc.</li>
+                                            adding another server, you may need to open the following additional
+                                            ports: 27017, 27018, or whatever port
+                                            you assign to the server.<ul>
+                                                <li>Ensure you also allow the port through <a
+                                                        href="https://www.tomshardware.com/news/how-to-open-firewall-ports-in-windows-10,36451.html">Windows
+                                                        Firewall</a>.
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li>Run the start bat for the server you want and it should begin to load.</li>
                                     </ol>
                                     <h4>
@@ -135,6 +151,14 @@
                                             must be set in the map rotation. Example:
                                             <code>set sv_maprotation "gametype war map mp_refraction map mp_lab2 map mp_comeback"</code>.
                                         </li>
+                                        <li>Game logging (needed for IW4MAdmin
+                                            and other administration tools)
+                                            <a href="https://github.com/Joelrau/S1x-IW6x-g_log-script">
+                                                requires a script to be installed</a>
+                                            into the <code>s1x/scripts</code>
+                                            folder.&nbsp; Without this script,
+                                            logging simply will not work.
+                                        </li>
                                         <li>Other issues may exist that are not covered here. This is an initial
                                             release, so be aware that you might experience difficulties running
                                             dedicated servers for S1x.</li>
@@ -143,9 +167,12 @@
                                         Server Administration Software:
                                     </h4>
                                     <p>
-                                        IW4MAdmin partially supports S1x. Not all functions work but full support is
-                                        planned as the client is further developed. For downloads and more more
-                                        information, please visit <a
+                                        The latest builds of
+                                        IW4MAdmin partially support S1x. Not all functions work but full support is
+                                        planned as the client is further developed.
+                                        The previously mentioned logging script
+                                        has to be installed as well for this to
+                                        function. For downloads and more information, please visit <a
                                             href="https://github.com/RaidMax/IW4M-Admin/#iw4madmin--">IW4MAdmin</a>.
                                     </p>
                                 </div>
