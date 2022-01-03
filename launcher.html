@@ -65,30 +65,14 @@
             </div>
             <div class="line"></div>
             <h2>X Labs Launcher Download</h2>
-            <p id="download-block" style="display: none;">Click <a
-                    href="https://master.xlabs.dev/data/xlabs.exe">here</a> to download the Launcher.</p>
-            <p id="patreon-block" style="display: none;">
-                If you like our projects, consider donating on patreon:<br>
+            <p id="download-block">
+                <a href="https://master.xlabs.dev/data/xlabs.exe" class="btn btn-common download-button"><i
+                        class="fas fa-download"></i>&nbsp;&nbsp;&nbsp;Download</a>
+            </p>
+            <p id="patreon-block">
+                If you like our projects, consider donating on Patreon:<br>
                 <a href="https://www.patreon.com/xlabsproject" class="btn btn-common patreon-button"><i
                         class="fab fa-patreon"></i>&nbsp;&nbsp;&nbsp;Patreon</a>
-            </p>
-            <script>
-                function unlocker()
-                {
-                    setTimeout(function ()
-                    {
-                        $("#patreon-block").show();
-                        $("#download-block").show();
-                        $("#twitter-block").hide();
-                    }, 1000);
-                    return true;
-                }
-            </script>
-            <p id="twitter-block">
-                Follow us on twitter to unlock the download:<br>
-                <a href="https://twitter.com/XLabsProject" target="_blank" onclick="unlocker()"
-                    class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i
-                        class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;Twitter</a>
             </p>
         </div>
     </section>
