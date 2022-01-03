@@ -597,6 +597,22 @@ iframe {
     background: #f2f2f2;
 }
 
+.tutorial ol li{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	
+}
+
+.tutorial-warning {
+	border:4px dashed yellow;
+	padding:20px;
+	margin-bottom:20px;
+}
+
+.tutorial-warning b, .tutorial ol li b{
+	font-weight:bold;
+}
+
 
 /* ==========================================================================
    Features Section Style
