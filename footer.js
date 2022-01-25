@@ -15,7 +15,7 @@ document.write('\
                         </ul>\
                     </div>\
                     <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">\
-                        <p>All copyrights reserved &copy; 2021 - <a rel="nofollow" href="https://xlabs.dev">X Labs</a></p>\
+                        <p>All copyrights reserved &copy; 2022 - <a rel="nofollow" href="https://xlabs.dev">X Labs</a></p>\
                     </div>\
                 </div>\
             </div>\
