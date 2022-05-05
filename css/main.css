@@ -1,5 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Lato:300');
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,600');
+
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -597,20 +598,20 @@ iframe {
     background: #f2f2f2;
 }
 
-.tutorial ol li{
-	margin-bottom: 15px;
-	margin-top: 15px;
-	
+.tutorial ol li {
+    margin-bottom: 15px;
+    margin-top: 15px;
+
 }
 
 .tutorial-warning {
-	border:4px dashed yellow;
-	padding:20px;
-	margin-bottom:20px;
+    border: 4px dashed yellow;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.tutorial-warning b, .tutorial ol li b{
-	font-weight:bold;
+.tutorial-warning b, .tutorial ol li b {
+    font-weight: bold;
 }
 
 
@@ -1188,21 +1189,25 @@ footer {
 }
 
 @-webkit-keyframes sk-bounce {
+
     0%,
     100% {
         -webkit-transform: scale(0);
     }
+
     50% {
         -webkit-transform: scale(1);
     }
 }
 
 @keyframes sk-bounce {
+
     0%,
     100% {
         transform: scale(0);
         -webkit-transform: scale(0);
     }
+
     50% {
         transform: scale(1);
         -webkit-transform: scale(1);
@@ -1268,6 +1273,7 @@ footer {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1336,4 +1342,8 @@ footer {
     .table-collapsible {
         display: none !important;
     }
+}
+
+a>i {
+    padding-right: 10px;
 }
