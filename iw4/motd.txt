@@ -1,1 +1,1 @@
-^7Please update to IW4x 0.7.2 - Native Controller Support with Aim Assist. Use our launcher for automatic updates! ^2https://xlabs.dev/launcher
+^7Please update to IW4x 0.7.3 - Native Controller Support with Aim Assist. Use our launcher for automatic updates! ^2https://xlabs.dev/launcher
