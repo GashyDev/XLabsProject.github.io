@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="iw4x, iw6x, x labs, game modifications, cod clients, opensource, open source, ghosts client, mw2 client, iw4, iw6, iw6x faq">
     <meta property="og:title" content="X Labs" />
-    <meta property="og:description" content="Frequently asked questions related to console commands for the IW4x, IW6x, and S1x clients." />
+    <meta property="og:description" content="List of frequently used and newly implemented console commands for the IW4x, IW6x, and S1x clients." />
     <meta property="og:image" content="https://xlabs.dev/img/xlabs_social.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="X Labs" />
-    <meta name="twitter:description" content="Frequently asked questions related to console commands for the IW4x, IW6x, and S1x clients." />
-    <meta name="twitter:url" content="https://xlabs.dev/iw6x_faq" />
+    <meta name="twitter:description" content="List of frequently used and newly implemented console commands for the IW4x, IW6x, and S1x clients." />
+    <meta name="twitter:url" content="https://xlabs.dev/console_commands" />
     <meta name="twitter:image" content="https://xlabs.dev/img/xlabs_social.png" />
     <title>Console Commands | X Labs</title>
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
@@ -195,22 +195,22 @@
                                     <td>Change the vertical position of the safe area.</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">g_playerCollision</th>
-                                    <td class="table-collapsible">g_playerCollision 1</td>
+                                    <th scope="row">bg_playerCollision</th>
+                                    <td class="table-collapsible">bg_playerCollision 1</td>
                                     <td class="table-collapsible">X</td>
                                     <td class="table-collapsible">✓</td>
                                     <td class="table-collapsible">X</td>
                                     <td class="table-collapsible">✓</td>
-                                    <td>Flag whether player collision is on or or off.</td>
+                                    <td>Flag whether player collision is on or or off, named g_playerCollision on IW6x and S1x.</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">g_playerEjection</th>
-                                    <td class="table-collapsible">g_playerEjection 1</td>
+                                    <th scope="row">bg_playerEjection</th>
+                                    <td class="table-collapsible">bg_playerEjection 1</td>
                                     <td class="table-collapsible">X</td>
                                     <td class="table-collapsible">✓</td>
                                     <td class="table-collapsible">X</td>
                                     <td class="table-collapsible">✓</td>
-                                    <td>Flag whether player ejection is on or or off.</td>
+                                    <td>Flag whether player ejection is on or or off, named g_playerEjection on IW6x and S1x.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">connect</th>
@@ -389,7 +389,7 @@
                                     <td class="table-collapsible">✓</td>
                                     <td class="table-collapsible">✓</td>
                                     <td class="table-collapsible">✓</td>
-                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
                                     <td>Change game speed (requires devmap or sv_cheats 1) [Default = 190]</td>
                                 </tr>
                                 <tr>
@@ -443,7 +443,7 @@
                                     <td class="table-collapsible">✓</td>
                                     <td class="table-collapsible">✓</td>
                                     <td class="table-collapsible">X</td>
-                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
                                     <td>Sets the jump height.</td>
                                 </tr>
                                 <tr>
@@ -535,6 +535,194 @@
                                     <td class="table-collapsible">✓</td>
                                     <td class="table-collapsible">✓</td>
                                     <td>Attempts to rejoin the last game you were in.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">g_antilag</th>
+                                    <td class="table-collapsible">g_antilag 1</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Flag whether Lag Compensation is on or or off.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">bg_bounces</th>
+                                    <td class="table-collapsible">bg_bounces 1</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td>Enable Bounces, named pm_bouncing on IW6x and S1x.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">sv_allowAimAssist</th>
+                                    <td class="table-collapsible">sv_allowAimAssist 0</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td>Toggle Aim Assist Serverside, named aimassist_enabled on IW6x and S1x.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">bg_elevators</th>
+                                    <td class="table-collapsible">bg_elevators 0</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td>Allow Elevators to be used, named g_elevators on S1x and g_enableElevators on IW6x.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">bg_rocketJump</th>
+                                    <td class="table-collapsible">bg_rocketJump 1</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Enable Rocket Jumps.</td>
+                                </tr>
+                                    <th scope="row">bg_bouncesAllAngles</th>
+                                    <td class="table-collapsible">bg_bouncesAllAngles 1</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Enable Bouncing from all Angles.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">cg_noclip_scaler</th>
+                                    <td class="table-collapsible">cg_noclip_scaler 100</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Modify movement speed when in noclip mode.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">cg_ufo_scaler</th>
+                                    <td class="table-collapsible">cg_ufo_scaler 100</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Modify movement speed when in ufo mode.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">player_proneSpeedScale</th>
+                                    <td class="table-collapsible">player_proneSpeedScale 100</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Modify movement speed when prone.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">player_duckedSpeedScale</th>
+                                    <td class="table-collapsible">player_duckedSpeedScale 100</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Modify movement speed when ducking.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">rcon_log_requests</th>
+                                    <td class="table-collapsible">rcon_log_requests 1</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside setting to log RCON requests.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">sv_randomMapRotation</th>
+                                    <td class="table-collapsible">sv_randomMapRotation 1</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside setting to randomize the Map Rotation.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">sv_allowColoredNames</th>
+                                    <td class="table-collapsible">sv_allowColoredNames 0</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside setting to allow players to use colors in their names.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">muteClient / unmuteClient / unmuteAll</th>
+                                    <td class="table-collapsible">muteClient/unmuteClient [clientnum] / unmuteAll</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside command to mute players (text and voice chat).</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">bg_bulletRange</th>
+                                    <td class="table-collapsible">bg_bulletRange 10000</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Increase or decrease Bullet Range.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">bg_surfacePenetration</th>
+                                    <td class="table-collapsible">bg_surfacePenetration 10</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Increase or decrease Bullet Surface Penetration Depth.</td>
+                                </tr>
+                               </tr>
+                                    <th scope="row">sv_disableChat</th>
+                                    <td class="table-collapsible">sv_disableChat 1</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside toggle to enable or disable Text Chat.</td>
+                                </tr>
+                               </tr>
+                                    <th scope="row">addMap</th>
+                                    <td class="table-collapsible">addMap mp_rust</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside command to add a Map to the Map Rotation.</td>
+                                </tr>
+                               </tr>
+                                    <th scope="row">addGametype</th>
+                                    <td class="table-collapsible">addGametype sd</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside command to add a Gametype to the Map Rotation.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">clanName</th>
+                                    <td class="table-collapsible">clanName KEK</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Sets your Clan Tag.</td>
+                                </tr>
+                                </tr>
+                                    <th scope="row">sv_voice</th>
+                                    <td class="table-collapsible">sv_voice 0</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">✓</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td class="table-collapsible">X</td>
+                                    <td>Serverside toggle to enable or disable Voice Chat.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">quit</th>
