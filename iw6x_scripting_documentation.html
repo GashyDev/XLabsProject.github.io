@@ -687,7 +687,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 The scripts are written in LUA. In case you are not familiar with LUA, you should catch up <a href="https://www.lua.org/pil/contents.html" target="_blank">here</a>.</p>
 <h1 id="quick-dirty-example">Quick &amp; dirty Example</h1>
 <p>Here is a sample script. If you want to read code instead of documentation, this should cover up the basics of the API:</p>
-<p><code>iw6x/scripts/heli/__init__.lua</code></p>
+<p><code>iw6x/lua-scripts/heli/__init__.lua</code></p>
 <pre class="hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">move_helicopter</span><span class="hljs-params">(heli, player)</span></span>
     <span class="hljs-keyword">local</span> origin = player.origin
     origin.z = origin.z + <span class="hljs-number">1000</span>
@@ -735,11 +735,11 @@ The scripts are written in LUA. In case you are not familiar with LUA, you shoul
 <span class="hljs-keyword">end</span>
 
 level:onnotify(<span class="hljs-string">"connected"</span>, player_connected)</pre><h1 id="file-structure">File structure</h1>
-<p>All scripts need to be placed in the <code>iw6x/scripts</code> folder in your Call of Duty: Ghosts installation folder.<br>You will need to create a folder for your script, for example <code>my_script</code>. The main entrypoint is always the <code>__init__.lua</code> file in there.</p>
+<p>All scripts need to be placed in the <code>iw6x/lua-scripts</code> folder in your Call of Duty: Ghosts installation folder.<br>You will need to create a folder for your script, for example <code>my_script</code>. The main entrypoint is always the <code>__init__.lua</code> file in there.</p>
 <p>The structure should be like this:</p>
 <pre class="hljs"><span class="hljs-selector-tag">COD</span> <span class="hljs-selector-tag">Ghosts</span>
 ├── <span class="hljs-selector-tag">iw6x</span>
-│   ├── <span class="hljs-selector-tag">scripts</span>
+│   ├── <span class="hljs-selector-tag">lua-scripts</span>
 │   │   ├── <span class="hljs-selector-tag">my_script</span>
 │   │   │   ├── __<span class="hljs-selector-tag">init__</span><span class="hljs-selector-class">.lua</span>
 │   │   │   └── <span class="hljs-selector-tag">other_script</span><span class="hljs-selector-class">.lua</span>
