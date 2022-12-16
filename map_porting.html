@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -35,6 +35,13 @@
 
         gtag('config', 'G-EJKDYYL6WF');
     </script>
+	
+	<style>
+	b { 
+	font-weight:bold; 
+	color:yellow;
+	}
+	</style>
 </head>
 
 <body>
@@ -69,52 +76,63 @@
 
                             <ul>
                                 <li>Call of Duty 4: Modern Warfare (1.7)</li>
-                                <li><a href="https://github.com/promod/CoD4-Mod-Tools/archive/master.zip">Call of Duty Mod Tools (1.1)</a></li>
                                 <li><a href="support_iw4x_client">IW4x</a></li>
-                                <li><a href="https://github.com/XLabsProject/iw4x-mod-builder/releases/latest/download/iw4x-mod-builder.exe">IW4x Mod Tools</a></li>
-                                <li><a href="https://github.com/XLabsProject/iw3x-port/releases/latest/download/iw3x.dll">IW3xport</a></li>
+                                <li><a href="https://github.com/XLabsProject/iw4x-map-porting-utility/releases/tag/v1.0.3">IW4x Map Porting Utility</a></li>
+                                <li><a href="https://github.com/XLabsProject/iw3x-port/releases/tag/v1.0.5">IW3xport</a></li>
                             </ul>
                         </p>
+						<h4>Setting up the tools</h4>
                         <p>
-                            Extract the mod tools to your CoD4 directory and extract the IW3xport files to the CoD4 directory as well. Put the IW4x mod tools in the directory where you have IW4x installed in.
+                            <ul>
+								<li>Extract the IW3xport files (iw3x.dll and iw3xport.exe) to your CoD4 installation directory</li>
+								<li>Extract the IW4x Map Porting Utility anywhere on your hard drive</li>
+								<li>Make sure your IW4x is up to date by launching it once using the XLabs launcher!</li>
+								<li>Make sure your Call Of Duty 4 installation is correct & runs properly</li>
+							</ul>
                         </p>
                         <h4>Get a map</h4>
                         <p>
                             Find any CoD4 custom map you want from Google, then put the files in <code>C:\Program Files (x86)\Activision\Call of Duty 4 - Modern Warfare\usermaps</code>. You will need to make a folder in there with the name of the map,
-                            so for example: <code>C:\Program Files (x86)\Activision\Call of Duty 4 - Modern Warfare\usermaps\mp_summit</code>.
+                            so for example: <code>C:\Program Files (x86)\Activision\Call of Duty 4 - Modern Warfare\usermaps\mp_burg</code>.
                         </p>
                         <h4>Install the map</h4>
-                        <img src="https://i.imgur.com/ZLF76Wc.png" width="500" height="400" class="img-fluid">
-                        <p>Install the map into your CoD4 directory like the pic above, where mine is mp_summit.<br><br> Now go to your IW4x install and open the IW4x mod tools (run it as Admin), it will take some time to load. Once it’s opened, click the
-                            Settings tab and set the locations of your IW4x and CoD4 installs:</p>
-                        <img src="https://i.imgur.com/QU8fNW1.png" width="500" height="350" class="img-fluid">
-                        <p>then hit save. Once done go one tab above (Build Map)</p>
-                        <img src="https://i.imgur.com/COTqzRO.png" width="500" height="350" class="img-fluid">
-                        <p>
-                            and scroll to Other Maps OR User Maps (will be located under one or the other). Then select the map (for me, mp_summit) and click these buttons in order:
-                            <ol>
-                                <li>Export COD4 Map</li>
-                                <li>Build MW2 Map</li>
-                                <li>Generate IWD</li>
-                                <li>Run MW2 Map</li>
-                            </ol>
+                        <img src="https://i.imgur.com/Z3me7lu.png" width="500" height="400" class="img-fluid">
+                        <p>Install the map into your CoD4 directory like the pic above, where mine is mp_burg.</p>
 
-                            Here is my compiled version of summit:
-                        </p>
-                        <img src="https://i.imgur.com/UAni1dI.png" width="500" height="350" class="img-fluid">
-                        <p>
-                            Then that’s it.<br><br> Questions:
+						<p>Launch the MPU and if prompted, browse to the location of both your Call Of Duty 4 installation and your MW2/IW4x installation.</p>
+                        <img src="https://user-images.githubusercontent.com/33836535/208087357-012e8087-f841-48a3-8f38-eba7d1cb8647.png" width="500" height="350" class="img-fluid">
+						
+                        <h4>Dump the map</h4>
+						<p>Select one or more maps to convert, then press <b>Export and prepare</b> to dump the map to the correct folder. Wait for the process to finish.</p>
 
-                            <br><br> How can I load it from the regular game?<br><br> Open the console with ~ and type map [map name]<br><br> How do I share this?<br><br> You can put it up the following files in the image up for HTTP download when clients
-                            connect, or distribute these files:
-                        </p>
-                        <img src="https://i.imgur.com/YPXZ7BN.png" width="500" height="350" class="img-fluid">
+						<img src="https://i.imgur.com/CxmHiL4.png" class="img-fluid" />
+
+                        <h4>Build the map</h4>
+						<p>Select one or more maps to build and press <b>Build zone</b> to build the map. Wait for the process to finish.<br>The converted map will end up in <code>&lt;Your MW2 game location&gt;/usermaps</code></p>
+
+						<img src="https://i.imgur.com/Ha9uzs0.png" class="img-fluid" />
+
+                        <h4>Run the map</h4>
+						<p>Your map is now ready to be played! You can press <b>Run map</b> to test it.
+                            Here is my compiled version of Burg:
+						</p>
+						
+                        <img src="https://i.imgur.com/Ni0n3Rg.png" width="500" height="350" class="img-fluid">
                         <p>
-                            Can I use this on my server?<br><br> Yes! It’s the same process, just place the pictured files in the usermaps directory and run in the console map [map name]
+                            Questions:
+
+                            <p><i>How can I load it from the regular game?</i><br>
+							Open the console with ~ and type map [map name]
+							</p>
+							<p><i>How do I share this?</i><br>
+							You will need to <b>Generate IWD</b> first! Then you can put it up the following files in the image up for HTTP download when clients connect, or distribute these files:
+							</p>
                         </p>
-                        <div class="yt">
-                            <iframe width="920" height="520" src="https://www.youtube-nocookie.com/embed/GWEV2jOtubM?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        <img src="https://i.imgur.com/t39Jnwv.png" width="500" height="350" class="img-fluid">
+                        <p>
+                            <i>Can I use this on my server?</i><br>
+							Yes! It’s the same process, just place the pictured files in the usermaps directory and run in the console <code>map mp_my_map_name</code>
+                        </p>
                     </div>
                 </div>
                 <!-- Support Item Wrapper Ends-->
