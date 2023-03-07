@@ -144,7 +144,7 @@
                                     <th scope="col" class="table-collapsible">✓</th>
                                     <th scope="col" class="table-collapsible">X</th>
                                     <th scope="col" class="table-collapsible">X</th>
-                                    <td>Compares two strings.</td>
+                                    <td>Compares substrings without case sensitivity.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">IsEndStr</th>
@@ -179,16 +179,32 @@
                                     <td>Casts a string to an integer.</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">FileWrite</th>
-                                    <td class="table-collapsible">FileWrite(filepath, string, mode)</td>
+                                    <th scope="row">GetChar</th>
+                                    <td class="table-collapsible">GetChar(string input, int index)</td>
                                     <th scope="col" class="table-collapsible">✓</th>
                                     <th scope="col" class="table-collapsible">X</th>
                                     <th scope="col" class="table-collapsible">X</th>
-                                    <td>Writes a file containing a given string to the "scriptdata" folder.</td>
+                                    <td>Gets the ASCII value of the character at "index" position from a string.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">FileWrite</th>
+                                    <td class="table-collapsible">FileWrite(string filepath, string input, string mode)</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Writes a file containing input to the "scriptdata" folder using the specified mode.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">FileRemove</th>
+                                    <td class="table-collapsible">FileRemove(string filepath)</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Deletes a file from the "scriptdata" folder.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">FileRead</th>
-                                    <td class="table-collapsible">FileRead(filepath)</td>
+                                    <td class="table-collapsible">FileRead(string filepath)</td>
                                     <th scope="col" class="table-collapsible">✓</th>
                                     <th scope="col" class="table-collapsible">X</th>
                                     <th scope="col" class="table-collapsible">X</th>
@@ -196,7 +212,7 @@
                                 </tr>
                                 <tr>
                                     <th scope="row">FileExists</th>
-                                    <td class="table-collapsible">FileExists(filepath)</td>
+                                    <td class="table-collapsible">FileExists(string filepath)</td>
                                     <th scope="col" class="table-collapsible">✓</th>
                                     <th scope="col" class="table-collapsible">X</th>
                                     <th scope="col" class="table-collapsible">X</th>
@@ -241,6 +257,14 @@
                                     <th scope="col" class="table-collapsible">X</th>
                                     <th scope="col" class="table-collapsible">X</th>
                                     <td>Dumps all Data in script storage to a json file.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">StorageLoad</th>
+                                    <td class="table-collapsible">StorageLoad()</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Reads data from the "script storage" json file archive.</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">StorageClear</th>
@@ -353,6 +377,54 @@
                                     <th scope="col" class="table-collapsible">X</th>
                                     <th scope="col" class="table-collapsible">X</th>
                                     <td>Replaces an existing game Function with a custom one.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Int64IsInt</th>
+                                    <td class="table-collapsible">Int64IsInt(string input)</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Checks if input is representable as a 32-bit signed integer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Int64ToInt</th>
+                                    <td class="table-collapsible">Int64ToInt(string input)</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Converts input to a 32-bit signed integer</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Int64OP</th>
+                                    <td class="table-collapsible">Int64OP(string a, string operation, string b)</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Performs a int-64 operation on a and b</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">IsSprinting</th>
+                                    <td class="table-collapsible">self IsSprinting()</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Check if a client is sprinting</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">InitialWeaponRaise</th>
+                                    <td class="table-collapsible">self InitialWeaponRaise(string weapon)</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Black Ops 2 compatibility function</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">OnPlayerSay</th>
+                                    <td class="table-collapsible">OnPlayerSay(function(ent player, string message, string mode))</td>
+                                    <th scope="col" class="table-collapsible">✓</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <th scope="col" class="table-collapsible">X</th>
+                                    <td>Chat callback function</td>
                                 </tr>
                             </tbody>
                         </table>
