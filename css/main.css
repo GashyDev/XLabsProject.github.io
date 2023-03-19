@@ -110,6 +110,10 @@ a:not([href]):not([tabindex]):hover {
     box-shadow: var(--button-focus-white-900-50);
 }
 
+.btn > i {
+    padding-right: 0.625rem;
+}
+
 .btn-common {
     border: 2px solid var(--blue-500);
     background-color: var(--blue-500);
@@ -1385,6 +1389,4 @@ footer {
     }
 }
 
-a>i {
-    padding-right: 10px;
-}
+
