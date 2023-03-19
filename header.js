@@ -10,7 +10,7 @@ document.write('\
 					<a class="nav-link" href="https://xlabs.dev/">Home</a>\
 				</li>\
 				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">\
-					<a class="nav-link dropdown-toggle iw4x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IW4x</a>\
+					<a href="#" class="nav-link dropdown-toggle iw4x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IW4x</a>\
 					<div class="dropdown-menu iw4x-menu">\
 						<a class="dropdown-item" href="support_iw4x_client">IW4x Client Support</a>\
 						<a class="dropdown-item" href="iw4x_repair">IW4x Repair Guide</a>\
@@ -24,7 +24,7 @@ document.write('\
 					</div>\
 				</li>\
 				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">\
-					<a class="nav-link dropdown-toggle iw6x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IW6x</a>\
+					<a href="#" class="nav-link dropdown-toggle iw6x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IW6x</a>\
 					<div class="dropdown-menu iw6x-menu">\
 						<a class="dropdown-item" href="support_iw6x_client">IW6x Client Support</a>\
 						<a class="dropdown-item" href="iw6x_repair">IW6x Repair Guide</a>\
@@ -37,7 +37,7 @@ document.write('\
 					</div>\
 				</li>\
 				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">\
-					<a class="nav-link dropdown-toggle s1x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">S1x</a>\
+					<a href="#" class="nav-link dropdown-toggle s1x-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">S1x</a>\
 					<div class="dropdown-menu s1x-menu">\
 						<a class="dropdown-item" href="support_s1x_client">S1x Client Support</a>\
 						<a class="dropdown-item" href="s1x_repair">S1x Repair Guide</a>\
@@ -49,7 +49,7 @@ document.write('\
 					</div>\
 				</li>\
 				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">\
-					<a class="nav-link dropdown-toggle guides" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Misc Guides</a>\
+					<a href="#" class="nav-link dropdown-toggle guides" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Misc Guides</a>\
 					<div class="dropdown-menu guides">\
 						<a class="dropdown-item" href="antivirus">Antivirus</a>\
 						<a class="dropdown-item" href="console_commands">Console Commands</a>\
@@ -57,7 +57,7 @@ document.write('\
 					</div>\
 				</li>\
 				<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">\
-					<a class="nav-link dropdown-toggle socials" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Socials</a>\
+					<a href="#" class="nav-link dropdown-toggle socials" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Socials</a>\
 					<div class="dropdown-menu socials">\
 						<a class="dropdown-item" target="_blank" href="https://twitter.com/XLabsProject">Twitter</a>\
 						<a class="dropdown-item" target="_blank" href="https://discord.gg/sKeVmR3">Discord</a>\
