@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --black-0: #000;
     --white-900: #fff;
     --white-800: #f2f2f2;
@@ -898,6 +898,9 @@ iframe {
 }
 
 .nav-link {
+    position: relative;
+    padding: 0.3125rem 0 !important;
+    display: inline-block;
     color: var(--white-900) !important;
     font-weight: 500;
     transition: all 200ms linear;
@@ -909,12 +912,6 @@ iframe {
 
 .nav-item.active .nav-link {
     color: var(--white-900) !important;
-}
-
-.nav-link {
-    position: relative;
-    padding: 0.3125rem 0 !important;
-    display: inline-block;
 }
 
 .nav-item:after {
