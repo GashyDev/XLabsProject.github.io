@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --black-0: #000;
     --white-900: #fff;
     --white-800: #f2f2f2;
@@ -942,10 +942,10 @@ iframe {
     transition: all 200ms linear;
 }
 
-.nav-item:hover .dropdown-menu {
+/* .nav-item:hover .dropdown-menu {
     display: block;
     margin: 0;
-}
+} */
 
 .dropdown-menu {
     background-color: var(--grey-300);
